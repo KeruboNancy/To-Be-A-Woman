@@ -1,31 +1,40 @@
-# [Live Site → https://femininewoman.netlify.app/](https://femininewoman.netlify.app/)
-
 # To Be A Woman
 
-This project was created as part of the February 2025 JavaScript Events and Basic Interactivity challenge.
+A simple, elegant website celebrating femininity and womanhood.
 
-It includes:
+🌐 **Live site:** [https://femininewoman.netlify.app/](https://femininewoman.netlify.app/)  
+📦 **GitHub Repository:** [https://github.com/KeruboNancy/To-Be-A-Woman.git](https://github.com/KeruboNancy/To-Be-A-Woman.git)
 
-- HTML structure for a blog-like page themed "To Be A Woman"
-- CSS for visual styling
-- JavaScript for handling interactions and animations
+## Overview
+
+This project is a static website built with HTML, CSS, and JavaScript. It highlights themes related to the identity and essence of being a woman, through clean design, thoughtful language, and a gentle visual experience.
 
 ## Features
 
-- Responsive design using CSS Flexbox and Grid
-- JavaScript to handle button clicks and dynamic content updates
-- Accessible semantic markup
+- Responsive layout
+- Clean, feminine design
+- Simple navigation
+- Optimized for mobile and desktop
 
-## Technologies Used
+## Getting Started
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+To run this project locally:
 
-## How to Run
+1. Clone the repository  
+   `git clone https://github.com/KeruboNancy/To-Be-A-Woman.git`
 
-1. Download or clone the repository.
-2. Open `index.html` in your browser.
+2. Open `index.html` in your browser
+
+> No server setup is needed. It's a purely static site.
+
+## Deployment
+
+Deployed using [Netlify](https://www.netlify.com/).  
+Check out the live version [here](https://femininewoman.netlify.app/).
+
+## License
+
+This project is open-source and available under the MIT License.
 
 ## Author
 
