@@ -120,6 +120,71 @@ button:hover, .booknowBtn a:hover {
     }
 }
 
+.blog-page{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.blog-post {
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-post h2 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.blog-post p {
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e76f51;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-post a:hover {
+    background-color: #2e2421;
+}
+
+.small-img {
+    height: 250px;
+    object-fit: cover;
+}
+
 .contact-page{
     background-image: linear-gradient(to bottom, #d16ba5, #b168a5, #92659f, #746094, #5a5a85, #52648e, #4b6e95, #44779a, #3f97b9, #3bb8d2, #42d9e5, #5ffbf1);
 }
