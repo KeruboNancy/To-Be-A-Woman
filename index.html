@@ -19,16 +19,46 @@
             <a href="contact.html">Book Now</a>
         </nav>
         <h1>Awaken your feminine power—soft, strong, magnetic. Come home to who you truly are. 💖</h1>
-        
     </header>
 
     <main class="home">
+        <!-- Hero Section -->
         <section class="hero">
-            <h2>Femininity isn’t something you chase. It’s something you remember.
-            It lives in your softness, your stillness, your power to feel deeply and love fully. In a world that tells you to
-            harden, this space invites you to soften—without losing your strength. Reconnect with your intuition, embrace your
-            sensuality, and live in flow. Your feminine energy is magnetic, sacred, and already within you. Let’s awaken it—together.</h2>
-           <a href="about.html"> <button id="exploreBtn" class="moreBtn">Explore More </button> </a>
+            <h2>
+                Femininity isn’t something you chase. It’s something you remember. It lives in your softness, your
+                stillness,
+                your power to feel deeply and love fully. In a world that tells you to harden, this space invites you to
+                soften—without losing your strength.
+            </h2>
+            <a href="about.html"><button id="exploreBtn" class="moreBtn">Explore More</button></a>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials-section">
+            <h2>Do you view yourself as a woman in the current society?
+                <br> I'd love to hear your thoughts!</h2>
+            <div id="testimonials" class="testimonial-container">
+                <!-- Testimonials will load here dynamically -->
+            </div>
+        </section>
+
+        <!-- Add Your Testimonial -->
+        <section id="add-testimonial">
+            <h3>Share Your Experience</h3>
+            <form id="testimonialForm">
+                <textarea id="testimonialText" rows="4" placeholder="Write your testimonial here..." required></textarea>
+                <button type="submit">Submit Testimonial</button>
+            </form>
+        </section>
+        
+        <!-- Voting Section -->
+        <section id="vote-section">
+            <h2>What Makes You Feel More Feminine?</h2>
+            <div class="vote-section">
+                <button data-vote="like" class="voterBtn">A) Dressing in soft, elegant clothes</button>
+                <button data-vote="dislike" class="voterBtn">B) Making more and more money</button>
+                <p id="voteFeedback" class="feedback"></p>
+            </div>
         </section>
     </main>
 
