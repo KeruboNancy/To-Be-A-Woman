@@ -2,8 +2,7 @@
 
 A simple, elegant website celebrating femininity and womanhood.
 
-🌐 **Live site:** [https://femininewoman.netlify.app/](https://femininewoman.netlify.app/)  
-📦 **GitHub Repository:** [https://github.com/KeruboNancy/To-Be-A-Woman.git](https://github.com/KeruboNancy/To-Be-A-Woman.git)
+🌐 **Live site:** [https://femininewoman.netlify.app/](https://femininewoman.netlify.app/)
 
 **To Be A Woman** is a web platform dedicated to empowering women by providing a space to share stories, access resources, and engage with a supportive community. This project implements a Community Content Management System with a MySQL database and a Node.js + Express API, fulfilling two objectives: a complete database management system and a CRUD API.
 
