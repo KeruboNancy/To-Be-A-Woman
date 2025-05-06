@@ -38,24 +38,24 @@ The project aims to amplify women's voices and foster community empowerment.
 
 ## Database Schema
 
-The MySQL database includes five tables:
+The MySQL database includes six tables:
 
-- **Users**: User information (1-M with Stories, Comments).
-- **Stories**: User-submitted stories (1-M with Comments, M-M with Tags).
-- **Comments**: Comments on stories.
-- **Tags**: Story categories.
-- **Story_Tags**: Junction table for story-tag relationships.
+- **Users**: User information.
+- **Bookings**: Sessions booked by users (1-M with Users).
+- **Testimonials**: Feedback from users (1-M with Users).
+- **Poll Options**: Available poll choices.
+- **Votes**: User votes on poll options (M-M relationship via `votes` table).
 
 **Constraints**:
 
-- Primary Keys (e.g., `user_id`, `story_id`).
-- Foreign Keys (e.g., `user_id` in `Stories` references `Users`).
-- NOT NULL (e.g., `title`, `content`).
-- UNIQUE (e.g., `email`, `username`).
+- Primary Keys (e.g., `user_id`, `option_id`, `booking_id`)
+- Foreign Keys (e.g., `user_id` in `bookings`, `testimonials`, and `votes`)
+- NOT NULL constraints
+- ENUM type for vote classification
 
-**Entity-Relationship Diagram (ERD)**:
-![ERD](docs/erd.png)
-_Note_: The ERD is in `docs/erd.png`. Generate it using MySQL Workbench or similar tools.
+**Entity-Relationship Diagram (ERD)**:  
+![ERD](images/erd.jpg)  
+_Note_: The ERD is saved as a **JPG** in the `docs/` directory. It was generated from the final SQL schema using dbdiagram.io.
 
 ## Installation
 
