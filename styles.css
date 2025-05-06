@@ -300,9 +300,7 @@ footer {
     margin-bottom: 0;
 }
 
-/* Media Queries for Responsiveness */
 
-/* Large screens (desktops) */
 @media screen and (min-width: 1200px) {
     nav {
         padding: 50px;
@@ -346,17 +344,7 @@ footer {
     }
 }
 
-/* Small screens (mobiles) */
 @media screen and (max-width: 767px) {
-    /* nav {
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 10px 0;
-    } */
 
     .blog-post {
         width: 90%;

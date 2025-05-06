@@ -75,6 +75,8 @@ if (exploreBtn) {
   });
 
 
+  
+
   const form = document.getElementById("bookingForm");
   if (form) {
     const feedback = document.getElementById("feedback");
@@ -217,7 +219,7 @@ if (exploreBtn) {
   }
 
   
-  
+
   const voteButtons = document.querySelectorAll(".vote-section button");
   voteButtons.forEach(button => {
     let clickTimeout;
