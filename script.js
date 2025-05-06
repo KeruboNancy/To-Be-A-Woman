@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // =====================
-  // Tabs Functionality
-  // =====================
+
   function openTab(evt, tabName) {
     const tabs = document.getElementsByClassName("tabcontent");
     for (let i = 0; i < tabs.length; i++) {
@@ -12,9 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.openTab = openTab;
 
-  // =====================
-  // Image Slider Setup
-  // =====================
+
   const images = [
     "images/1.jpg",
     "images/2.jpg",
@@ -49,9 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // =====================
-  // Button Hover & Click Effects
-  // =====================
   const exploreBtn = document.getElementById("exploreBtn");
 
 if (exploreBtn) {
@@ -61,35 +54,27 @@ if (exploreBtn) {
 
   exploreBtn.addEventListener("mouseover", (e) => {
     e.target.style.backgroundColor = "green";
-    e.target.style.color = "#ffffff"; // Make text white
+    e.target.style.color = "#ffffff";
   });
 
   exploreBtn.addEventListener("mouseout", (e) => {
-    e.target.style.backgroundColor = "#f50057";
-    e.target.style.color = ""; // Reset to original color (or set a specific one)
+    e.target.style.backgroundColor = "#ba68c8";
+    e.target.style.color = ""; 
   });
 }
 
 
-  // =====================
-  // Keypress Detection
-  // =====================
   document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       alert("You pressed Enter! Ready to dive in?");
     }
   });
 
-  // =====================
-  // Double Click Bonus
-  // =====================
   document.body.addEventListener("dblclick", () => {
     alert("Double click detected! You're full of energy today 💫");
   });
 
-  // =====================
-  // Booking Form Validation
-  // =====================
+
   const form = document.getElementById("bookingForm");
   if (form) {
     const feedback = document.getElementById("feedback");
@@ -131,9 +116,8 @@ if (exploreBtn) {
     });
   }
 
-  // =====================
-  // Load Testimonials from Server
-  // =====================
+
+
   const testimonialsContainer = document.getElementById("testimonials");
 
   window.addEventListener("DOMContentLoaded", () => {
@@ -157,9 +141,9 @@ if (exploreBtn) {
       });
   });
 
-  // =====================
-  // Submit New Testimonial
-  // =====================
+
+
+
   const testimonialForm = document.getElementById("testimonialForm");
   const testimonialText = document.getElementById("testimonialText");
 
@@ -170,7 +154,7 @@ if (exploreBtn) {
       const text = testimonialText.value.trim();
       if (!text) return;
 
-      // Show it immediately
+    
       const newTestimonial = document.createElement("div");
       newTestimonial.className = "testimonial";
       newTestimonial.innerHTML = `
@@ -179,9 +163,9 @@ if (exploreBtn) {
       `;
       testimonialsContainer.prepend(newTestimonial);
 
-      testimonialText.value = ""; // Clear input
+      testimonialText.value = ""; 
 
-      // Send to server
+      
       fetch("http://localhost:3000/api/testimonials", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -193,9 +177,10 @@ if (exploreBtn) {
     });
   }
 
-  // =====================
-  // Voting Functionality – Submit to MySQL via API
-  // =====================
+
+  
+
+
   function submitVote(voteType) {
     const voteFeedback = document.getElementById("voteFeedback");
 
@@ -231,7 +216,8 @@ if (exploreBtn) {
       });
   }
 
-  // Handle voting buttons with single/double click detection
+  
+  
   const voteButtons = document.querySelectorAll(".vote-section button");
   voteButtons.forEach(button => {
     let clickTimeout;
