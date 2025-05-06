@@ -55,7 +55,7 @@ The MySQL database includes six tables:
 
 **Entity-Relationship Diagram (ERD)**:  
 ![ERD](images/erd.jpg)  
-_Note_: The ERD is saved as a **JPG** in the `docs/` directory. It was generated from the final SQL schema using dbdiagram.io.
+_Note_: The ERD is saved as a **JPG** in the `images/` directory. It was generated from the final SQL schema using dbdiagram.io.
 
 ## Installation
 
